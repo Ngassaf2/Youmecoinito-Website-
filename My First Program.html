@@ -1,0 +1,669 @@
+     <!DOCTYPE html>
+     <html leng="en"> 
+     <head>	      
+	      <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+          <title>Youmecoinito International</title>         
+          <link rel="stylesheet" href="style.css">
+		  
+      
+                									 	   
+		 </script>	 
+	 
+         <!-- Google Tag Manager -->
+         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-MX4HFS2');</script>
+        <!-- End Google Tag Manager -->
+              		  
+     </head>	 
+     <style>
+    *{   
+        margin: 0;
+        padding: 0;       
+        font-family: 'poppins', sans-serif;
+		box-sizing: bordpr-box;
+	}	
+	a{
+        text-decoration
+		color: #5a5a5a;
+	}	 
+	img{
+	    cursor: ponter;
+	}
+	.flex-div{
+	        display: flex;
+			align-item: center; 
+			box-shadow: 0 0 10px
+	}
+	nav{
+	    padding: 10px 2%; 
+		justify-content: space-between;
+		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		background: #fff;
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+	.nav-right img{
+	   width: 25px;
+	   margin-right: 25px;
+	
+	}
+	.nav-right .user-icon{
+	    width: 35px;
+		border-radius: 50%;
+		 margin-right: 0;		
+	}
+	.nav-left .user-icon{
+	      width: 35px;
+		 border-radius: 50%;
+		 margin-right: 0;
+    }
+    .nav-left .menu-icon{
+	      width: 22px;
+		 border-radius: 25px;
+    }
+	.nav-left .logo{
+	      width: 130px;
+    }
+	.nav-middle .mic-icon{
+	     width: 16px;
+	}
+	.nav-middle .search-box{
+	     border: 1px solid #ccc;
+		 margin-right: 15px;
+		 padding: 8px 12px; 
+		 border-radius: 25px;
+    }
+	.nav-middle .search-box input{
+	    width: 400px; 
+	    border: 0px
+		outline:0;
+		background: transparent;
+	}
+    .nav-middle .search-box img{
+	      width: 15px; 
+	}
+	/* -------- sidebar------------- */
+	
+	.sidebar{
+	    background: #fff;
+	    width: 15p%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		padding-left: 2%;
+		padding-top: 80px;		
+	}
+	.shortcut-links a img{
+	   width: 15p%;
+	   margin-right: 20px;	   
+	}
+	.shortcut-links a{
+	    display: flex;
+		align-item: center;
+		margin-bottom: 20px;
+		width: fit-content;
+		flex-wrap: wrap;
+	}
+	.shortcut-links a:first-child{
+	    color: #ed3833;	
+	}
+    .sidebar hr{
+	    border: 0;
+		height: 1px;
+	    background: #ccc;
+		width: 85%;
+	}
+	.subscribed-list h3{
+        font-size: 13px;
+	    margin: 20px 0;
+		color: #5a5a5a;
+	}
+	.subscribed-list a{
+	    display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		width: fit-content;
+		flex-wrap: wrap;
+	}
+	.subscribed-list a img{
+	    width: 25px;
+		border-radius: 50%;
+		margin-right: 20px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    }
+    body{
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #4070f4;
+	 text-decoration
+		 color: #5a5a5a;
+ }
+ .container{
+   position: relative;
+   max-width: 900px;
+   width: 100%;
+   border-radius: 6px;
+   margin: 0 15px;
+   background-color: #afff;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+ }
+ .container header{
+  position: relative;
+ font-size: 20px;
+ font-weight: 600;   
+ color: #333;
+}
+.container header::before{ 
+ content: "";
+ position: absolute;
+ left: 0;
+ bottom: -2px;
+ height: 3px;
+ width: 27px;
+ border-radius: 8px;
+ background-color: #4070f4;   
+}
+.container form{
+ position: relative;
+ margin-top: 16px; 
+ min-height: 490px;
+ background-color: #fff;
+ overflow: hidden;
+} 
+.container form .form{
+   position: absolute;{
+   background-color: #fff;
+   transition: 0.3s ease;
+}
+.container form .form.second{
+   opacity: 0;
+   pointer-events: none;
+   transform: translatex(100);
+} 
+form.secActive .form.second{
+   opacity: 1;
+   pointer-events: auto;
+   transform: translatex(0);
+}
+form.secActive .form.first{
+   opacity: 0;
+   pointer-events: none;
+}
+.container form .details{   
+ margin-top: 30px;
+} 
+.container form .details.ID{
+ margin-top: 10px;
+}     
+.container form .title{
+ display: block;
+ margin-bottom: 8px;
+ font-size: 16px;
+ font-weight: 500;
+ margin: 6px 0;
+ color: #333;
+} 
+.container form .fields{
+ display: flex;
+ align-items: center;
+ justify-content: space-between; 
+ flex-wrap: wrap;  
+} 
+.form .fields .input-field{
+ display: flex;
+ width: calc(100% / 3 - 15px);   
+ flex-direction: column;
+ margin: 4px 0;
+}
+.input-field label{
+ font-size: 12px;
+ font-weight: 500;
+ color: #2e2e2e;
+}
+.input-field input{
+ outline; none;
+ font-size: 14px;
+ font-weight: 400px;
+ color: #333;
+ border-radius: 5px;
+ border: 1px solid #aaa;
+ padding: 0 15px
+ height: 42px;
+ margin: 8px 0;
+}   
+.input-field input:is(:focus, :valid){
+ box-shadow: 0 3px 6px rgha(0,0,0,0.13);
+}
+.input-field input(type="date"){
+ color: #707070;
+}
+.input-field input(type="date"):valid{
+ color: #333;
+}
+.container form button, ,.btnback{
+ display: flex;
+ align-items: center;
+ justify-content: center; 
+ height: 45PX;
+ max-width: 200px;
+ width: 100;
+ border: none;
+ outline: none;
+ color: #afff;
+ border-radius: 5px;
+ margin: 25px 0;
+ background-color: #4070f4;
+ transition: all 0. 3s linear;
+ cursor: pointer;
+}
+.container form button,
+.container form .backBtn{
+ font-size: 14px;
+ font-weight: 400;;
+}
+form button:hover{
+ background-color: #265df2;
+}     
+form button i,
+form .backBtn i{
+  margin: 0 6px;
+}
+form .backBtn i{  
+   transform: rotate(180deg);
+}
+form .button{ 
+display: flex;
+align-items: center;
+}
+form .buttons button , .backBtn{
+  margin: 14px;
+}
+
+@media (max-width: 750px) {
+ .container form{
+   overflow-y: scroll;
+ }
+ .container form::-wibkit-scrollbar{
+  display: none;
+}
+.form .fields .input-field{
+ width:calc(100% / 2 - 15px);
+}
+
+
+@media (max-width: 550px) {
+ .form .fields .input-field{
+ width:calc(100% / 2 - 15px);
+ }
+}
+</style>
+   </head>
+   
+    <body>
+
+            <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX4HFS2"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --><!--googleoff: all-->
+        
+	</script>	  
+
+	 	<div class="container">
+              <header>Registration</header>
+			  
+       <form action="#">         
+           <div class="form first">
+           <div class="details personal">
+              <span class="title">Personal Details</span>
+              
+               <div class="fields">
+                 <div class="input-field">
+                    <label>Full name</label>                    
+                   <input type="text" placeholder="Enter your name" required>
+                 </div> 
+				 
+                <div class="fields">
+                  <div class="input-field">
+                    <label>Date of Birth</label>                    
+                    <input type="date" placeholder="Enter birth date" required>
+             </div>
+            
+               <div class="fields">
+                  <div class="input-field">
+                     <label>Email</label>                    
+                    <input type="text" placeholder="Enter your email" required>
+             </div>
+            
+
+             <div class="fields">
+               <div class="input-field">
+                  <label>Mobile Number</label>                    
+                 <input type="text" placeholder="Enter mobile numbile" required>
+               </div>
+              
+            <div class="fields">
+              <div class="input-field">
+                <label>Garder</label>                    
+               <input type="text" placeholder="Enter your Garder" required>
+             </div>
+            
+             <div class="fields"> 
+                <div class="input-field">
+                <label>Occupation</label> 
+			    <input type="text" placeholder="Enter your Occupation" required>  
+          </div>
+		  
+    <div class="fields">
+       <div class="input-field">
+         <label>Address Type</label> 
+         <input type="text" placeholder="Enter address type" required>
+       </div>
+	   
+      <div class="fields">
+       <div class="input-field">
+        <label>Nationality</label>                    
+        <input type="text" placeholder="Enter nationality" required>
+      </div>
+    
+      <div class="input-field">
+         <label>Sate</label>                    
+         <input type="text" placeholder="Enter your sate" required>
+       </div>
+      
+   <div class="input-field">
+      <label>Districk</label>                    
+      <input type="text" placeholder="Enter your districk" required>
+    </div>
+  
+    <div class="input-field">
+      <label>Block Number</label>                    
+      <input type="number" placeholder="Enter block number" required>
+    </div>
+	
+   <div class="fields">
+      <div class="input-field">
+      <label>Ward Number</label>                    
+      <input type="number" placeholder="Enter ward number" required>
+  </div>
+ 
+<div class="details family">
+   <span class="title">Family Details</span>
+
+   <div class="input-field">
+      <label>Father Name</label>                    
+      <input type="text" placeholder="Enter father name" required>
+   </div>
+  
+    <div class="input-field">
+      <label>Mother Name</label>                    
+      <input type="text" placeholder="Enter mother name" required>
+    </div>
+  
+    <div class="input-field">
+      <label>Grandfather Name</label>                    
+      <input type="text" placeholder="Enter grandfather name" required>
+   </div>
+  
+    <div class="input-field">
+      <label>Spouse Name</label>                    
+      <input type="text" placeholder="Enter Spouse name" required>
+   </div>
+  
+    <div class="input-field">
+      <label>Father in Law</label>                    
+      <input type="text" placeholder="Enter father in law name" required>
+    </div>
+  
+    <div class="input-field">
+      <label>Mother in Law</label>                    
+      <input type="text" placeholder="Enter mother in Law name" required>
+	  
+    </div>
+   </div>
+  </div>
+ </div>
+ 
+  <div class="button">
+    <button class="backBtn">   
+      <span class="btnText">Back</span>
+      <i class="uil uil-navigator"></i>  
+   </div>
+
+   <div class="button">
+    <button class="nextBtn">
+          <span class="nextBtn">next</span> 
+          <i class="uil uil-navigator"></i>        
+   </button>
+   </div>
+  </div>
+ </div>
+</form>
+</div>
+
+    <form action="#"> 
+         <div class="form second">
+         <div class="details address">
+        <span class="text">Address Details</span>
+   </div>
+     
+	 <div class="fields">
+       <div class="input-field">
+       <span class="text">Occupation</span>    
+   </div>
+   
+  <div class="fields">
+       <div class="input-field">
+         <label>Occupation</label>     
+        <input type="text" placeholder="Enter your Occupation" required>
+     </div>
+    	 
+      <div class="fields">
+         <div class="details ID">
+         <span class="text">Identity details</span>    
+      </div>
+	  
+    <div class="fields">
+          <div class="inpu=field">
+           <label>ID Type</label>                    
+           <input type="text" placeholder="Enter id type" required>
+    </div>
+  
+    <div class="fields">
+       <div class="input-field">
+          <label>ID Number</label>                    
+         <input type="number" placeholder="Enter id number" required>
+  </div>
+
+  <div class="fields">
+    <div class="input-field">
+       <label>Issued Autherity</label>                    
+      <input type="text" placeholder="Enter Issued autherity" required>
+  </div>
+  
+     <div class="fields">
+       <div class="input-field">
+         <label>Issued State</label>                    
+         <input type="date" placeholder="Enter Issued State" required>
+  </div>
+
+    <div class="fields">
+     <div class="input-field">
+        <label>Issued Date</label>                    
+       <input type="text" placeholder="Enter Issued date" required>
+</div>
+
+ <div class="fields">
+        <div class="input-field">
+        <label>Expiry date</label>                    
+        <input type="date" placeholder="Enter Expiry date" required>
+ </div>
+
+      <button class="nextBtn">
+         <span class="btnText">Next</span>
+         <i class="uil uil-navigator"></i>
+     </button>
+    </div>
+   </div>  
+  </form>
+</div>
+    
+	 <nav class="flex-div">
+	   <div class="nav-left flex-div">
+	      <img src="images/menu.png" class="menu-icon> 
+		  <img src="images/logo.png" class="logo"> 
+     </div>	
+     <div class="nav-middle flex-div">
+	      <div class="search-box flex-div">
+			<input type="text" placeholder="Search">
+			<img src="images/search.png">
+	   </div>
+	   <img src="imges/voice-search.png" class="mic-iocn">
+    </div>
+        <div class="nav-right flex-div">
+          <img src="images/upload.png"> 
+          <img src="images/more.png"> 
+          <img src="images/notificatio.png"> 
+          <img src="images/jack.png" class="user-icon">
+      </div>
+    </nav>
+    <!-- ---------------- sidebar---------- -->
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a href=""><img src="images/hom.png"><p>Home</P></a>
+			<a href=""><img src="images/explore.png"><p>Explore</P></a>
+			<a href=""><img src="imgges/subscription.png"><p>Subscription</P></a>
+			<a href=""><img src="">images/library.png<p>Library</P></a>
+			<a href=""><img src="images/history.png"><p>History</P></a>
+			<a href=""><img src="imgges/playlist.png"><p>Playlist</P></a>
+			<a href=""><img src="">images/messages.png<p>Messages</P></a>
+			<a href=""><img src="images/show-more.png"><p>Show More</P></a>
+			<hr>
+		</div>
+		<div class="subcribed-list">
+		    <h3>SUBSCRIBED</h3>
+			<a href=""><img src="images/Marie.png"><p>Marie Claire</P></a>
+			<a href=""><img src="images/Stephanie.png"><p>Stephanie Ule</P></a>
+			<a href=""><img src="images/Rollins.png"><p>Rollins Yumsie</P></a>
+			<a href=""><img src="images/OSman.png"><p>Osman Kamayi</P></a>
+			<a href=""><img src="images/Clarissa.png"><p>Yumsie Clarissa</P></a>
+			<a href=""><img src="images/Bryan.png"><p>Bryan Yumsie</P></a>
+		</div>
+	  </div>
+	  
+	 <-- ------- main ------->
+	 
+	 <div class="container">
+	     <div class="banner">
+		     <img src="images/banner.png">
+		</div>
+		 <div class="list-container">
+		     <div class="vid-list">
+		         <a href="play-video.html"><img src="imges/thumbail1.png class="thumbnail">		       
+			  <div class="flex-div">
+			      <img src="images/marie.png">
+				  <class="vid-info">
+				     <a href="">Best channel</a>
+					 <p>Best Chnnel to Witch and Build Ur Own Website</p>
+					 <p>20k Views 2 days</p>
+		        </div>   
+		      </div>
+			</div>   
+		   <div class="vid-list">
+		        <a href="play-video.htm"><img src="imges/thumbail1.png class="thumbnail">		       
+			      <div class="flex-div">
+			      <img src="images/marie.png">
+				  <class="vid-info">
+				   <a href="">Best channel</a>
+				   <p>Best Chnnel to Witch and Build Ur Own Website</p>
+					 <p>20k Views 2 days</p>
+			</div>
+		  </div>
+		</div>
+		 <div class="vid-list">
+		        <a href=""><img src="imges/thumbail1.png class="thumbnail">		       
+			      <div class="flex-div">
+			      <img src="images/marie.png">
+				  <class="vid-info">
+				   <a href="">Best channel</a>
+			  </div>
+			 </div>
+			</div>
+			 <div class="vid-list">
+		        <a href=""><img src="imges/thumbail1.png class="thumbnail">		       
+			      <div class="flex-div">
+			      <img src="images/marie.png">
+				  <class="vid-info">
+				   <a href="">Best channel</a>
+			</div>
+		   </div>
+		  </div	   
+				  
+				
+
+		<
+	  
+			
+			
+			
+			
+
+		  
+	 </nav>
+       <h1>Youmecoinito Website</h1>
+	   <p></p>
+       
+
+             <script src="Script.js"></script>
+                                        
+                  <script>
+
+                    alert("What's Up?!");
+                  document.write("Youmecoinito Website");
+
+                  </script>
+               <script>                  
+				   const = form = document.querySelector("form"),
+                    nextBtn = document.querySelector(".nextBtn"), 
+                     backBtn = form.querySelector(".backBtn"), 
+                        allinput = form.querySelectorAll(".first input"); 
+
+
+        nextBtn.addEventListener("click", ()=> {
+           allinput.forEach(input => {
+             if(input.value !=""){
+                form.classList.add('secActive');
+             }else{
+               form.classList.remove('secActive');  
+               form.classList.remove('secActive');       
+        }
+    })
+
+}) 
+ 
+      backBtn.addEventListener("click", (=>  form.classList.remove('secActive');));
+	  
+    </script>
+   </body>		   
+</html>
